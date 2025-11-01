@@ -25,5 +25,5 @@ jobs:
       - name: Build project
         run: npm run build
 
-      - name: Demo
-        run: npm run serve -- --host
+      - name: Verify
+        run: ls -l
