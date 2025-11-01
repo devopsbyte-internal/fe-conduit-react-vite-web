@@ -1,4 +1,4 @@
-name: Build and Serve Vite App
+name: CI - NPM
 
 on:
   push:
