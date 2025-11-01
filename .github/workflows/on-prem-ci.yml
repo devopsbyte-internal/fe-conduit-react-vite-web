@@ -22,10 +22,8 @@ jobs:
         run: npm ci
         # package-lock.json
 
-
       - name: Build project
         run: npm run build
 
-
-      # - name: Demo
-      #   run: npm run dev -- --host
+      - name: Demo
+        run: npm run serve -- --host
