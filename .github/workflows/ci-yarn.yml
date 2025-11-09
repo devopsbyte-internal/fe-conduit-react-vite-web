@@ -1,9 +1,9 @@
 name: CI - Yarn
 
 on:
-  push:
-    branches: [ main ]
-  pull_request:
+  # push:
+  #   branches: [ main ]
+  # pull_request:
   workflow_dispatch:
 
 jobs:
@@ -43,4 +43,5 @@ jobs:
 
       - name: Verify output
         run: ls -l && ls -l dist
+
 
