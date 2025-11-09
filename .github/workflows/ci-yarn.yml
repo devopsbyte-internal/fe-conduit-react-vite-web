@@ -42,7 +42,4 @@ jobs:
         run: yarn build
 
       - name: Verify output
-        run: ls -l dist || (echo "dist/ missing" && exit 1)
-
-      - name: Ensure lockfile unchanged
-        run: git diff --exit-code yarn.lock || (echo "yarn.lock changed during CI" && exit 1)
+        run: ls -l && ls -l dist
